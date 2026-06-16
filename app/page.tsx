@@ -16,12 +16,13 @@ function HomeContent() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-secondary to-background py-20 px-4 md:py-32">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative py-20 px-4 md:py-40" style={{backgroundImage: 'url(/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="relative max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 text-balance">
             Radiant Skin Starts Here
           </h1>
-          <p className="text-xl text-foreground/60 mb-8 max-w-2xl mx-auto text-pretty">
+          <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto text-pretty font-medium">
             Experience luxury skincare and bath products designed for modern beauty. White Sparkle brings premium clean beauty to your daily ritual with innovative formulas and pure ingredients.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
@@ -110,7 +111,7 @@ function HomeContent() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-secondary/40 py-20 px-4">
+      <section className="bg-white py-20 px-4 border-t border-b border-muted">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-center text-foreground mb-12">
             Loved by Our Community
@@ -155,7 +156,7 @@ function HomeContent() {
           <h2 className="text-3xl font-serif font-bold mb-4">
             Glow with White Sparkle
           </h2>
-          <p className="mb-6 text-primary/90">
+          <p className="mb-6 text-white/90 text-lg">
             Subscribe for exclusive access to new products, beauty tips, and special member-only discounts.
           </p>
           <form
