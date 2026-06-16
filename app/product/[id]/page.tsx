@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { ShoppingCart, ArrowLeft, Check } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 function ProductContent() {
   const params = useParams()
@@ -74,11 +75,14 @@ function ProductContent() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Product Image */}
-            <div className="flex items-center justify-center bg-secondary/40 rounded-lg p-8 min-h-96">
-              <div className="text-center">
-                <div className="text-6xl mb-4">{product.emoji}</div>
-                <p className="text-foreground/60">{product.name}</p>
-              </div>
+            <div className="relative overflow-hidden bg-secondary/40 rounded-lg p-8 min-h-96">
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
             {/* Product Details */}
@@ -186,12 +190,14 @@ function ProductContent() {
                     href={`/product/${relatedProduct.id}`}
                     className="group"
                   >
-                    <div className="bg-secondary/40 rounded-lg p-8 mb-4 flex items-center justify-center min-h-64 group-hover:bg-secondary/60 transition">
-                      <div className="text-center">
-                        <div className="text-5xl mb-2">
-                          {relatedProduct.emoji}
-                        </div>
-                      </div>
+                    <div className="relative overflow-hidden bg-secondary/40 rounded-lg mb-4 min-h-64 group-hover:bg-secondary/60 transition">
+                      <Image
+                        src={relatedProduct.image}
+                        alt={relatedProduct.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
                     </div>
                     <h3 className="font-semibold text-foreground group-hover:text-primary transition">
                       {relatedProduct.name}

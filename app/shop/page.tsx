@@ -41,7 +41,7 @@ function ShopContent() {
       <section className="bg-gradient-to-r from-secondary to-secondary/50 py-16 px-4 border-b border-primary/20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl font-serif font-bold text-foreground mb-2">
-            ✨ Shop Our Collection
+            Shop Our Collection
           </h1>
           <p className="text-foreground/70 text-lg">
             Discover premium beauty products crafted for radiance
@@ -59,7 +59,7 @@ function ShopContent() {
                 {/* Category Filter */}
                 <div className="bg-card rounded-xl p-6 border border-primary/10">
                   <h3 className="font-serif font-bold text-foreground mb-4 text-lg">
-                    💄 Category
+                    Category
                   </h3>
                   <div className="space-y-3">
                     {categories.map((cat) => (
@@ -83,7 +83,7 @@ function ShopContent() {
                 {/* Sort Filter */}
                 <div className="bg-card rounded-xl p-6 border border-accent/10">
                   <h3 className="font-serif font-bold text-foreground mb-4 text-lg">
-                    ⭐ Sort By
+                    Sort By
                   </h3>
                   <div className="relative">
                     <select
@@ -103,7 +103,7 @@ function ShopContent() {
                 {/* Price Range Info */}
                 <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 rounded-xl border border-primary/20">
                   <h4 className="font-serif font-bold text-foreground text-lg mb-3">
-                    💰 Price Range
+                    Price Range
                   </h4>
                   <div className="space-y-2">
                     <p className="text-foreground/80 text-sm">
@@ -121,7 +121,7 @@ function ShopContent() {
             <div className="md:col-span-3">
               <div className="mb-8 p-4 bg-card rounded-lg border border-primary/10">
                 <p className="text-foreground/80 font-medium">
-                  ✨ Showing <span className="text-accent font-bold">{filteredProducts.length}</span> beautiful product{filteredProducts.length !== 1 ? 's' : ''}
+                  Showing <span className="text-accent font-bold">{filteredProducts.length}</span> beautiful product{filteredProducts.length !== 1 ? 's' : ''}
                 </p>
               </div>
 
