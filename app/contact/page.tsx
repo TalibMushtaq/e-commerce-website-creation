@@ -39,10 +39,10 @@ function ContactContent() {
       <section className="bg-secondary py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-serif font-bold text-foreground mb-2">
-            Get In Touch
+            Contact White Sparkle
           </h1>
-          <p className="text-foreground/60">
-            We&apos;d love to hear from you. Reach out with questions or feedback.
+          <p className="text-foreground/60 text-lg">
+            Have a question about our products? Need help with an order? We&apos;re here for you and typically respond within 24 hours.
           </p>
         </div>
       </section>
@@ -52,48 +52,59 @@ function ContactContent() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Contact Info Cards */}
-            <div className="bg-secondary/40 rounded-lg p-8">
+            <div className="bg-secondary/40 rounded-lg p-8 border border-border">
               <Mail className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-serif font-bold text-foreground mb-2">Email</h3>
-              <p className="text-foreground/70">
+              <h3 className="font-serif font-bold text-foreground mb-2">Email Support</h3>
+              <p className="text-foreground/70 mb-2">
                 <a
-                  href="mailto:hello@puregreen.com"
-                  className="hover:text-primary transition"
+                  href="mailto:support@whitesparkle.com"
+                  className="hover:text-primary transition font-semibold"
                 >
-                  hello@puregreen.com
+                  support@whitesparkle.com
                 </a>
+              </p>
+              <p className="text-sm text-foreground/60">
+                Response time: 24 hours
               </p>
             </div>
 
-            <div className="bg-secondary/40 rounded-lg p-8">
+            <div className="bg-secondary/40 rounded-lg p-8 border border-border">
               <Phone className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-serif font-bold text-foreground mb-2">Phone</h3>
-              <p className="text-foreground/70">
+              <h3 className="font-serif font-bold text-foreground mb-2">Call Us</h3>
+              <p className="text-foreground/70 mb-2">
                 <a
-                  href="tel:+1234567890"
-                  className="hover:text-primary transition"
+                  href="tel:+18005551234"
+                  className="hover:text-primary transition font-semibold"
                 >
-                  (123) 456-7890
+                  1 (800) 555-1234
                 </a>
+              </p>
+              <p className="text-sm text-foreground/60">
+                Mon-Fri, 9am-6pm EST
               </p>
             </div>
 
-            <div className="bg-secondary/40 rounded-lg p-8">
+            <div className="bg-secondary/40 rounded-lg p-8 border border-border">
               <MapPin className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-serif font-bold text-foreground mb-2">Address</h3>
-              <p className="text-foreground/70">
-                123 Sustainable Lane
+              <h3 className="font-serif font-bold text-foreground mb-2">Headquarters</h3>
+              <p className="text-foreground/70 text-sm">
+                White Sparkle Beauty Co.
                 <br />
-                Portland, OR 97201
+                250 Innovation Drive
+                <br />
+                San Francisco, CA 94105
               </p>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-foreground mb-8 text-center">
-              Send us a Message
+            <h2 className="text-3xl font-serif font-bold text-foreground mb-2 text-center">
+              Get In Touch
             </h2>
+            <p className="text-center text-foreground/60 mb-8">
+              We&apos;re always happy to hear from our community. Send us a message and we&apos;ll get back to you shortly.
+            </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">

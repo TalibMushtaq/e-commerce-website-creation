@@ -16,13 +16,13 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">P+G</span>
+              <span className="text-primary-foreground font-bold text-lg">WS</span>
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-foreground" style={{ fontFamily: 'var(--font-playfair)' }}>
-                Pure + Green
+                White Sparkle
               </h1>
-              <p className="text-xs text-muted-foreground">Artisanal Soaps</p>
+              <p className="text-xs text-muted-foreground">Premium Beauty</p>
             </div>
           </Link>
 

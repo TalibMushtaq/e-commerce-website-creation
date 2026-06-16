@@ -10,17 +10,17 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">P+G</span>
+                <span className="text-primary-foreground font-bold">WS</span>
               </div>
               <div>
                 <h3 className="font-bold" style={{ fontFamily: 'var(--font-playfair)' }}>
-                  Pure + Green
+                  White Sparkle
                 </h3>
-                <p className="text-xs text-background/70">Artisanal Soaps</p>
+                <p className="text-xs text-background/70">Premium Beauty</p>
               </div>
             </div>
             <p className="text-sm text-background/80 leading-relaxed">
-              Handcrafted, natural soaps made with organic ingredients and love for the planet.
+              Luxury skincare and bath products with clean formulas, dermatologist-tested and sustainably sourced. Your skin deserves better.
             </p>
           </div>
 
@@ -35,13 +35,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/shop?category=body" className="text-background/80 hover:text-background transition-colors">
-                  Body Soaps
+                  Skincare
                 </Link>
               </li>
               <li>
                 <Link href="/shop?category=laundry" className="text-background/80 hover:text-background transition-colors">
-                  Laundry Soaps
+                  Bath & Body
                 </Link>
+              </li>
+              <li>
+                <a href="#" className="text-background/80 hover:text-background transition-colors">
+                  New Arrivals
+                </a>
               </li>
             </ul>
           </div>
@@ -52,22 +57,27 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="text-background/80 hover:text-background transition-colors">
-                  About Us
+                  About White Sparkle
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-background/80 hover:text-background transition-colors">
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
                 <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Privacy Policy
+                  Sustainability
                 </a>
               </li>
               <li>
                 <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Terms of Service
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-background/80 hover:text-background transition-colors">
+                  Careers
                 </a>
               </li>
             </ul>

@@ -15,10 +15,10 @@ function AboutContent() {
       <section className="bg-secondary py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl font-serif font-bold text-foreground mb-6">
-            Our Story
+            About White Sparkle
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl">
-            From a small kitchen to a thriving eco-conscious brand, Pure + Green is dedicated to crafting exceptional soaps without compromising our planet.
+            Founded by a team of skincare scientists and beauty enthusiasts, White Sparkle represents a new generation of luxury that prioritizes your skin health and environmental responsibility.
           </p>
         </div>
       </section>
@@ -32,16 +32,19 @@ function AboutContent() {
                 Our Mission
               </h2>
               <p className="text-lg text-foreground/70 mb-4 leading-relaxed">
-                We believe that luxury and sustainability go hand-in-hand. Our mission is to create the finest natural soaps while minimizing our environmental impact and supporting fair-trade practices.
+                We&apos;re on a mission to revolutionize the beauty industry by proving that premium doesn&apos;t mean harmful. Every White Sparkle product is meticulously formulated with cutting-edge skincare science and clean, ethically-sourced ingredients.
+              </p>
+              <p className="text-lg text-foreground/70 mb-4 leading-relaxed">
+                Our goal is simple: deliver visible results without compromise. No parabens, sulfates, or fillers—just pure efficacy backed by dermatological expertise and customer love.
               </p>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Every bar of soap is a small act of resistance against harmful chemicals and disposable culture. We're committed to transparency, quality, and making a difference.
+                We believe beauty should make you glow inside and out—confidence from knowing what you're putting on your skin, and pride in supporting a brand that cares.
               </p>
             </div>
             <div className="bg-secondary rounded-lg p-12 text-center">
               <Sparkles className="w-16 h-16 text-primary mx-auto mb-4" />
-              <p className="text-foreground/60 italic">
-                "Crafting luxury with purpose, one soap at a time."
+              <p className="text-foreground/60 italic text-lg">
+                "Luxe skincare that doesn&apos;t compromise. Clean beauty that actually works."
               </p>
             </div>
           </div>
@@ -55,25 +58,34 @@ function AboutContent() {
             Our Values
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg">
-              <Leaf className="w-12 h-12 text-primary mb-4" />
+            <div className="bg-white p-8 rounded-lg border border-border">
+              <Sparkles className="w-12 h-12 text-primary mb-4" />
               <h3 className="font-serif font-semibold text-foreground mb-3">
-                Sustainability
+                Innovation
               </h3>
               <p className="text-foreground/70">
-                Eco-friendly ingredients, recyclable packaging, and carbon-neutral shipping.
+                Cutting-edge formulations developed with dermatologists and skincare experts.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg">
+            <div className="bg-white p-8 rounded-lg border border-border">
+              <Leaf className="w-12 h-12 text-primary mb-4" />
+              <h3 className="font-serif font-semibold text-foreground mb-3">
+                Purity
+              </h3>
+              <p className="text-foreground/70">
+                Clean ingredients you can pronounce, backed by rigorous testing and third-party certifications.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg border border-border">
               <Users className="w-12 h-12 text-primary mb-4" />
               <h3 className="font-serif font-semibold text-foreground mb-3">
                 Community
               </h3>
               <p className="text-foreground/70">
-                Supporting local suppliers and fair-trade partners across the globe.
+                Building a global beauty community dedicated to self-care without guilt.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg">
+            <div className="bg-white p-8 rounded-lg border border-border">
               <Globe className="w-12 h-12 text-primary mb-4" />
               <h3 className="font-serif font-semibold text-foreground mb-3">
                 Transparency
@@ -96,10 +108,10 @@ function AboutContent() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-center text-foreground mb-12">
-            Our Process
+            Our Development Process
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -107,10 +119,10 @@ function AboutContent() {
                 1
               </div>
               <h3 className="font-serif font-bold text-foreground mb-2">
-                Source
+                Research & Formulate
               </h3>
               <p className="text-foreground/70">
-                We carefully source certified organic ingredients from ethical suppliers worldwide.
+                Our team of chemists and dermatologists collaborate to create innovative formulas backed by scientific research and real-world testing.
               </p>
             </div>
             <div className="text-center">
@@ -118,10 +130,10 @@ function AboutContent() {
                 2
               </div>
               <h3 className="font-serif font-bold text-foreground mb-2">
-                Craft
+                Test & Refine
               </h3>
               <p className="text-foreground/70">
-                Each batch is hand-crafted using traditional cold-process methods, preserving nutrients.
+                Every product undergoes rigorous dermatological testing to ensure safety, efficacy, and suitability for all skin types.
               </p>
             </div>
             <div className="text-center">
@@ -129,11 +141,35 @@ function AboutContent() {
                 3
               </div>
               <h3 className="font-serif font-bold text-foreground mb-2">
-                Ship
+                Deliver & Support
               </h3>
               <p className="text-foreground/70">
-                Packaged in recyclable, compostable materials and shipped carbon-neutral.
+                We're committed to customer success with dedicated support and visible results you can measure and feel.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <p className="text-4xl font-bold text-primary mb-2">50K+</p>
+              <p className="text-foreground/70">Happy Customers</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-primary mb-2">100%</p>
+              <p className="text-foreground/70">Clean Formulas</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-primary mb-2">15+</p>
+              <p className="text-foreground/70">Product Lines</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-primary mb-2">98%</p>
+              <p className="text-foreground/70">Would Recommend</p>
             </div>
           </div>
         </div>
@@ -143,10 +179,10 @@ function AboutContent() {
       <section className="bg-primary text-white py-20 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-serif font-bold mb-6">
-            Ready to Join Our Movement?
+            Join the White Sparkle Community
           </h2>
           <p className="text-lg mb-8 text-primary/90">
-            Experience the difference that natural, sustainable soaps can make in your daily routine.
+            Discover luxury skincare that actually works. Experience visible results and the confidence of knowing exactly what&apos;s on your skin.
           </p>
           <Link
             href="/shop"

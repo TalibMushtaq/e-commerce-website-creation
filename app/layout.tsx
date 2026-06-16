@@ -15,8 +15,8 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Pure + Green | Artisanal Eco-Friendly Soaps',
-  description: 'Handcrafted, natural soaps for laundry and body. Eco-friendly, cruelty-free, organic ingredients.',
+  title: 'White Sparkle | Premium Skincare & Bath Products',
+  description: 'Discover White Sparkle&apos;s luxury skincare collection. Handcrafted, clean beauty products for a radiant glow.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   colorScheme: 'light',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#6b8e5f' },
+    { media: '(prefers-color-scheme: light)', color: '#0066cc' },
   ],
   userScalable: true,
 }

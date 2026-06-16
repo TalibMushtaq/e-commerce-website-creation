@@ -19,10 +19,10 @@ function HomeContent() {
       <section className="relative bg-gradient-to-b from-secondary to-background py-20 px-4 md:py-32">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 text-balance">
-            Pure Luxury, Green Conscience
+            Radiant Skin Starts Here
           </h1>
           <p className="text-xl text-foreground/60 mb-8 max-w-2xl mx-auto text-pretty">
-            Handcrafted soaps made with certified organic ingredients. Every bar is a commitment to your skin and our planet.
+            Experience luxury skincare and bath products designed for modern beauty. White Sparkle brings premium clean beauty to your daily ritual with innovative formulas and pure ingredients.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
@@ -50,10 +50,10 @@ function HomeContent() {
                 <Leaf className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
-                100% Natural
+                Clean Formulas
               </h3>
               <p className="text-foreground/60">
-                Certified organic ingredients, no synthetic chemicals or harmful additives.
+                Science-backed ingredients without parabens, sulfates, or synthetic fragrances. Pure efficacy you can trust.
               </p>
             </div>
             <div className="text-center">
@@ -61,10 +61,10 @@ function HomeContent() {
                 <Heart className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
-                Cruelty-Free
+                Dermatologist Tested
               </h3>
               <p className="text-foreground/60">
-                Never tested on animals. Certified by international animal welfare standards.
+                Hypoallergenic and suitable for all skin types including sensitive, acne-prone, and compromised skin.
               </p>
             </div>
             <div className="text-center">
@@ -72,10 +72,10 @@ function HomeContent() {
                 <ShoppingCart className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
-                Eco-Packaging
+                Sustainably Sourced
               </h3>
               <p className="text-foreground/60">
-                Recyclable, compostable materials. Minimal waste from production to delivery.
+                Ethically sourced ingredients with packaging designed for minimal environmental impact.
               </p>
             </div>
           </div>
@@ -153,10 +153,10 @@ function HomeContent() {
       <section className="bg-primary text-white py-16 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-4">
-            Join Our Green Community
+            Glow with White Sparkle
           </h2>
           <p className="mb-6 text-primary/90">
-            Get exclusive offers, tips for sustainable living, and updates on new products.
+            Subscribe for exclusive access to new products, beauty tips, and special member-only discounts.
           </p>
           <form
             onSubmit={(e) => {
