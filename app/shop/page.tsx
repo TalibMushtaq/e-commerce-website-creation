@@ -11,6 +11,7 @@ import { ChevronDown } from 'lucide-react'
 function ShopContent() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [sortBy, setSortBy] = useState<string>('featured')
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100])
 
   const categories = ['all', ...new Set(products.map((p) => p.category))]
 
@@ -37,13 +38,13 @@ function ShopContent() {
       <Header />
 
       {/* Page Header */}
-      <section className="bg-secondary py-12 px-4">
+      <section className="bg-gradient-to-r from-secondary to-secondary/50 py-16 px-4 border-b border-primary/20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-serif font-bold text-foreground mb-2">
-            Shop Our Collection
+          <h1 className="text-5xl font-serif font-bold text-foreground mb-2">
+            ✨ Shop Our Collection
           </h1>
-          <p className="text-foreground/60">
-            Discover our complete range of natural, artisanal soaps
+          <p className="text-foreground/70 text-lg">
+            Discover premium beauty products crafted for radiance
           </p>
         </div>
       </section>
@@ -56,22 +57,22 @@ function ShopContent() {
             <div className="md:col-span-1">
               <div className="sticky top-4 space-y-6">
                 {/* Category Filter */}
-                <div>
-                  <h3 className="font-serif font-semibold text-foreground mb-4">
-                    Category
+                <div className="bg-card rounded-xl p-6 border border-primary/10">
+                  <h3 className="font-serif font-bold text-foreground mb-4 text-lg">
+                    💄 Category
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {categories.map((cat) => (
-                      <label key={cat} className="flex items-center cursor-pointer">
+                      <label key={cat} className="flex items-center cursor-pointer group">
                         <input
                           type="radio"
                           name="category"
                           value={cat}
                           checked={selectedCategory === cat}
                           onChange={(e) => setSelectedCategory(e.target.value)}
-                          className="w-4 h-4 text-primary"
+                          className="w-4 h-4 accent-primary"
                         />
-                        <span className="ml-3 text-foreground/80 capitalize">
+                        <span className="ml-3 text-foreground/80 capitalize group-hover:text-primary transition">
                           {cat === 'all' ? 'All Products' : cat}
                         </span>
                       </label>
@@ -80,44 +81,47 @@ function ShopContent() {
                 </div>
 
                 {/* Sort Filter */}
-                <div>
-                  <h3 className="font-serif font-semibold text-foreground mb-4">
-                    Sort By
+                <div className="bg-card rounded-xl p-6 border border-accent/10">
+                  <h3 className="font-serif font-bold text-foreground mb-4 text-lg">
+                    ⭐ Sort By
                   </h3>
                   <div className="relative">
                     <select
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
-                      className="w-full px-4 py-2 border border-border rounded-lg bg-white text-foreground appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 border border-primary/20 rounded-lg bg-secondary text-foreground appearance-none cursor-pointer hover:border-accent transition"
                     >
                       <option value="featured">Featured</option>
                       <option value="price-low">Price: Low to High</option>
                       <option value="price-high">Price: High to Low</option>
                       <option value="name">Name: A to Z</option>
                     </select>
-                    <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none text-foreground/60" />
+                    <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none text-accent" />
                   </div>
                 </div>
 
                 {/* Price Range Info */}
-                <div className="bg-secondary/40 p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground text-sm mb-2">
-                    Price Range
+                <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 rounded-xl border border-primary/20">
+                  <h4 className="font-serif font-bold text-foreground text-lg mb-3">
+                    💰 Price Range
                   </h4>
-                  <p className="text-foreground/60 text-sm">
-                    ${Math.min(...products.map((p) => p.price))} - $
-                    {Math.max(...products.map((p) => p.price))}
-                  </p>
+                  <div className="space-y-2">
+                    <p className="text-foreground/80 text-sm">
+                      Min: ${Math.min(...products.map((p) => p.price)).toFixed(2)}
+                    </p>
+                    <p className="text-foreground/80 text-sm">
+                      Max: ${Math.max(...products.map((p) => p.price)).toFixed(2)}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Products Grid */}
             <div className="md:col-span-3">
-              <div className="mb-6">
-                <p className="text-foreground/60">
-                  Showing {filteredProducts.length} product
-                  {filteredProducts.length !== 1 ? 's' : ''}
+              <div className="mb-8 p-4 bg-card rounded-lg border border-primary/10">
+                <p className="text-foreground/80 font-medium">
+                  ✨ Showing <span className="text-accent font-bold">{filteredProducts.length}</span> beautiful product{filteredProducts.length !== 1 ? 's' : ''}
                 </p>
               </div>
 
